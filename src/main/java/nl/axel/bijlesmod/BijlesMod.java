@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import nl.axel.bijlesmod.util.Reference;
-import nl.axel.bijlesmod.util.proxy.IProxy;
+import nl.axel.bijlesmod.util.proxy.CommonProxy;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -28,7 +28,7 @@ public class BijlesMod {
     public static BijlesMod instance;
 
     @SidedProxy(clientSide = Reference.CLASS_PROXY_CLIENT, serverSide = Reference.CLASS_PROXY_SERVER)
-    public static IProxy proxy;
+    public static CommonProxy proxy;
 
     public static final Logger LOGGER = LogManager.getLogger(Reference.MOD_ID);
 
